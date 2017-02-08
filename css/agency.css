@@ -297,7 +297,7 @@ header .top-logo{
 }
 @media screen and (max-width: 768) {
   .shows-header {
-    font-size: 60%;
+    font-size: 30%;
     padding: 30px;
   }
   .side-logo{
