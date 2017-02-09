@@ -321,6 +321,10 @@ section {
   section {
     padding: 40px;
   }
+  .side-logo {
+    width: 175%;
+    margin-top: 0%;
+  }
 }
 section h2.section-heading {
   font-size: 40px;
