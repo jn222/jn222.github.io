@@ -254,6 +254,8 @@ fieldset[disabled] .btn-xl.active {
 }
 .side-logo {
   transition: all .2s ease-in-out;
+  height: 275%;
+  margin-top: -18%;
 }
 .side-logo:hover {
   transform: scale(1.2);
