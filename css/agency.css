@@ -322,8 +322,9 @@ section {
     padding: 40px;
   }
   .side-logo {
-    width: 175%;
-    margin-top: 0%;
+    height: 175%;
+    width: auto;
+    margin-top: -20%;
   }
 }
 section h2.section-heading {
