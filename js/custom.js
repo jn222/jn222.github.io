@@ -4,20 +4,14 @@ window.mobilecheck = function() {
   return check;
 };
 $(document).ready(function() {
-  if (mobilecheck()) {
-    $('.top-logo').addClass('transparent');
-    $('.side-logo').removeClass('transparent');
-  }
+  $('.side-logo').addClass('transparent');
 });
 $(window).scroll(function() {
-  if (!mobilecheck() && $(document).scrollTop() > 80) {
+  if ($(document).scrollTop() > $(window).width()*.31) {
   	$('.side-logo').removeClass('transparent');
     $('.top-logo').addClass('transparent');
-  } else if (!mobilecheck()) {
+  } else {
+    $('.side-logo').addClass('transparent');
     $('.top-logo').removeClass('transparent');
-    $('.side-logo').addClass('transparent')
   }
-});
-$(document).ready(function() {
-  $('.carousel').carousel('pause');
 });
