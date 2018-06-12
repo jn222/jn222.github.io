@@ -291,7 +291,7 @@ fieldset[disabled] .btn-xl.active {
   transform: scale(1.1);
 }
 header {
-  background: url(../img/header-bg.jpg);
+  background: url(../img/header-bg.JPG);
   background-size: 100%;
   background-attachment: fixed;
   height: calc(100vw * 3648/5472);
@@ -312,7 +312,7 @@ header {
   text-align: right;
 }
 .about-header {
-  background: url('../img/crowd.jpg') no-repeat 0%;
+  background: url('../img/crowd.JPG') no-repeat 0%;
   background-size: 400%;
   background-attachment: fixed;
   -webkit-transform: scale(.25) translateX(-600vw);
