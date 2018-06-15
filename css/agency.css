@@ -50,11 +50,12 @@ a.active {
 a {
   color: #94dcfa;
 }
-a:hover,
-a:focus,
-a:active,
-a.active {
+a:hover {
   color: #29abe2;
+}
+hr {
+  width: 75%;
+  border-top: 1.5px solid lightgray;
 }
 h1,
 h2,
@@ -200,15 +201,15 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-toggle:focus {
   background-color: transparent;
 }
-.navbar-custom .nav li a {
+.navbar-custom .nav li a,
+.navbar-custom .nav li a:focus {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
 }
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus {
+.navbar-custom .nav li a:hover {
   color: goldenrod;
   outline: none;
 }
@@ -232,7 +233,7 @@ fieldset[disabled] .btn-xl.active {
 @media screen and (max-width: 768px) {
   .navbar-custom {
     background-color: transparent;
-    padding: 25px 0;
+    padding: 0 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -278,6 +279,9 @@ fieldset[disabled] .btn-xl.active {
   from {height: 275%;}
   to {height: 300%;}
 }
+span.line {
+  display: inline-block;
+}
 .side-logo {
   transition: all .2s ease-in-out;
   color: white;
@@ -291,9 +295,9 @@ fieldset[disabled] .btn-xl.active {
   transform: scale(1.1);
 }
 header {
-  background: url(../img/header-bg.JPG);
+  /* background: url(../img/header-bg.JPG);
   background-size: 100%;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   height: calc(100vw * 3648/5472);
   max-height: 100%;
 }
@@ -312,31 +316,35 @@ header {
   text-align: right;
 }
 .about-header {
-  background: url('../img/crowd.JPG') no-repeat 0%;
+  padding: 100px 0;
+  /* background: url('../img/crowd.JPG') no-repeat 0%;
   background-size: 400%;
   background-attachment: fixed;
   -webkit-transform: scale(.25) translateX(-600vw);
   transform: scale(.25) translateX(-600vw);
   width: 400vw;
   padding: 200px;
-  margin: calc(-40vw*.25 - 200px) 0;
+  margin: calc(-40vw*.25 - 200px) 0; */
 }
 .about {
   padding: 160px 80px;
 }
 .shows-header {
-  background: url('../img/dance.jpg') no-repeat 0%;
+  /* background: url('../img/dance.jpg') no-repeat 0%;
   background-size: 400%;
   background-attachment: fixed;
   -webkit-transform: scale(.25) translateX(-600vw);
   transform: scale(.25) translateX(-600vw);
-  width: 400vw;
+  width: 200vw;
   margin: calc(-55vw*.25 - 170px) 0;
+  background-size: 200%;
+  transform: translateZ(-1px); */
 }
 .header-text {
-  font-size: 30vw;
+  font-size: 7vw;
   padding: 5px;
   color: white;
+  transform: translateZ(1px);
 }
 .contact-header {
   font-size: 7.5vw;
@@ -348,18 +356,28 @@ header {
   color: gray;
 }
 .shows {
-  color: white;
   min-height: 300px;
+}
+.show {
+  padding: 10px 0;
 }
 section {
   padding: 80px 0;
 }
+header {
+  background: url(../img/header-bg.JPG);
+  background-size: 100%;
+  background-attachment: fixed;
+  height: calc(100vw * 3648/5472);
+  max-height: 100%;
+}
+
 @media screen and (max-width: 768px){
   section {
     padding: 40px;
   }
   .header-text {
-    font-size: 50vw;
+    font-size: 9vw;
   }
   .contact-header {
     font-size: 10vw;
@@ -369,21 +387,28 @@ section {
     font-size: 17px;
   }
   .about {
-    padding: 80px 60px;
+    padding: 30px 30px;
   }
   .about-header {
-    background-size: 500%;
+    /* background-size: 500%;
     background-attachment: fixed;
     -webkit-transform: scale(.20) translateX(-1000vw);
     transform: scale(.20) translateX(-1000vw);
     width: 500vw;
     padding: 150px;
-    margin: calc(-90vw*.20 - 160px) 0;
+    margin: calc(-90vw*.20 - 170px) 0; */
+    padding: 60px 0;
   }
-  .shows-text {
+  .shows {
+    padding: 10px 20px;
+  }
+  .show {
+    padding: 30px 0;
+  }
+  /* .shows-text {
     font-size: 30vw;
-  }
-  .shows-header {
+  } */
+  /* .shows-header {
     background-size: 500%;
     background-attachment: fixed;
     -webkit-transform: scale(.20) translateX(-1000vw);
@@ -391,7 +416,7 @@ section {
     width: 500vw;
     padding: 70px;
     margin: calc(-220vw*.20 - 80px) 0;
-  }
+  } */
   .side-logo {
     margin-top: -10%;
   }
